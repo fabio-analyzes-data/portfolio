@@ -46,7 +46,8 @@ const About = () => {
         <motion.p 
           className='mt-4 text-secondary text-[19px] max-w-3xl leading-[30px] font-normal'
           variants={fadeIn('','',0.1,0.1)}
-        >Hi there! I'm Fabio a Full-Stack Developer and industrial engineer with a passion for learning and problem solving. I enjoy discovering new technologies and frameworks to learn and build software solutions to every day challenges.<br className="sm:block hidden"/> Oh! and film music, I love film music!
+        >
+          Hi there! I'm Fabio a Data Analyst and Software Developer with a passion for aal things coding and problem solving. I enjoy collecting, organizing, interpreting and disseminating various types of statistical figures and data, creating data driven insights for business challenges<br className="sm:block hidden"/> Oh! and film music, I love film music!
         </motion.p>
       </div>
       <div className='mt-20 flex flex-wrap gap-10 justify-center'>

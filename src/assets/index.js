@@ -7,11 +7,14 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import stack from './stack.svg'
 
-import movieRenter from './movie-renter.png'
-import littleLemon from './little-lemon.png'
-import cleverSearch from './clever-search.png'
-import personalWeb from './portfolio-website.png'
-import projectSmall from './projects-small.png'
+import bellbeat from './Projects/bellbeat-market-analysis.png'
+import analysisSurvey from './Projects/data-analysis-survey.jpg'
+import edmontonTraffic from './Projects/edmonton-traffic.png'
+import salesDash from './Projects/sales-dashboard.jpg'
+import usStock from './Projects/us-stock-transactions.png'
+import secAlberta from './Projects/post-secondary-alberta.png'
+
+import tableau from './tableau.svg'
 
 import email from './mail.svg'
 import location from './location.svg'
@@ -27,13 +30,15 @@ export {
   menu,
   close,
   stack,
-  movieRenter,
-  littleLemon,
-  cleverSearch,
-  personalWeb,
-  projectSmall,
   email,
   github,
   location,
-  linkedin
+  linkedin,
+  bellbeat,
+  analysisSurvey,
+  edmontonTraffic,
+  salesDash,
+  usStock,
+  secAlberta,
+  tableau
 };

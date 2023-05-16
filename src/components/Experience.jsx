@@ -59,13 +59,24 @@ const ExperienceCard =({experience})=>{
       </div>
 
       {/* Frameworks */}
-      <div className='mt-4 text-center'>
-        {experience.icons.map((icon,index)=>(
+      <div className='mt-4 text-center flex justify-center'>
+        {experience.isUrl
+          ?experience.icons.map((icon,index) =>(
+              <img src={icon} className='w-8 mx-2'/>
+          ))
+          :experience.icons.map((icon, index) =>(
+            <i  
+            key={index}
+            className={`${icon} text-4xl px-2`}
+          ></i>
+          ))
+        }
+        {/* {experience.icons.map((icon,index)=>(
           <i  
             key={index}
             className={`${icon} text-4xl px-2`}
           ></i>
-        ))}
+        ))} */}
       </div>
 
       {/* Bullets */}
@@ -89,7 +100,7 @@ const ExperienceCard =({experience})=>{
       <div className='my-4 flex flex-wrap gap-2'>
         {experience.gitUrl
           ?<Button refUrl={experience.gitUrl} refText={'Source Code'} />
-          :<p className='ml-4 px-6 py-4 rounded-md shadow-md bg-[#C7CDD9] text-[#000]'>UNDER NDA</p>
+          :null
         }
 
         {experience.liveUrl

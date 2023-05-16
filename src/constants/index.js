@@ -4,15 +4,17 @@ import {
   creator,
   web,
   stack,
-  movieRenter,
-  littleLemon,
-  cleverSearch,
-  personalWeb,
-  projectSmall,
   email,
   location,
   github,
-  linkedin
+  linkedin,
+  bellbeat,
+  analysisSurvey,
+  edmontonTraffic,
+  salesDash,
+  usStock,
+  secAlberta,
+  tableau
 
 } from "../assets";
 
@@ -37,20 +39,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Front-End Developer",
-    icon: web,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
     title: "Data Analysis",
     icon: mobile,
   },
   {
     title: "Data Science",
     icon: creator,
+  },
+  {
+    title: "Front-End Developer",
+    icon: web,
+  },
+  {
+    title: "Backend Developer",
+    icon: backend,
   },
 ];
 
@@ -186,106 +188,100 @@ const technology = [
 
 const experiences = [
   {
-    title: "Full-Stack Development",
-    project_name: "iMovie-Renter",
-    image: movieRenter,
+    title: "Traffic Analysis",
+    project_name: "Edmonton Traffic Analysis",
+    image: edmontonTraffic,
     icon: stack,
     icons: [
-      'devicon-react-original',
-      'devicon-express-original',
-      'devicon-mongodb-plain',
-      'devicon-bootstrap-plain'
+      'devicon-jupyter-plain-wordmark',
+      'devicon-numpy-original',
+      'devicon-python-plain',
+      'devicon-pandas-original'
     ],
     date: "Jan 2021 - Feb 2022",
-    note: 'Please allow a couple of minutes for backend and DB to run',
-    gitUrl: 'https://github.com/fabio-writes-code/iMovieRenter/tree/main',
-    liveUrl: 'https://imovie-renter.onrender.com/movies',
+    gitUrl: 'https://github.com/fabio-analyzes-data/edmonton-traffic',
+    liveUrl: 'https://fabio-analyzes-data.github.io/edmonton-traffic/',
     points: [
-      "Designed and Developed front and back end of a movie renter administrative dashboard using the MERN Stack",
-      "Built and tested the back-end of the application using Node.js, Express, Joi, Mongoose  and other complimentary backend libraries ",
-      "Developed the front end interface using React.js, Boostrap, React-Router, Toasties, Joi among other complimentary packages",
-      "Designed the database system using MongoDB and the Atlas Cloud",
-      "Deployed Database using Atlas Cloud. Front-end and Back end deployment via Render.io"
+      'Performed an exploratory data analysis on Edmonton\'s City Traffic Data to gain insight into patterns, figures and correlations',
+      "Gained insight into Edmonton traffic density, its distribution and evolution throughout the 2010's",
+      'Analyzed whether the COVID pandemic altered traffic density and if Edmonton traffic levels have returned to pre-pandemic levels',
+      'Data provided by Edmonton City Traffic Flow Maps and Reports'
     ],
   },
   {
-    title: "React.js UI/UX Development",
-    image: littleLemon,
-    project_name: "Little Lemon",
-    icon: web,
+    title: "Market Analysis",
+    image: bellbeat,
+    project_name: "Bellbeat Market Analysis",
+    icon: mobile,
     icons: [
-      'devicon-react-original',
-      "devicon-sass-original",
-      'devicon-javascript-plain'
+      'devicon-rstudio-plain',
+      "devicon-kaggle-original",
     ],
     date: "March 2020 - April 2021",
-    gitUrl: 'https://github.com/fabio-writes-code/little-lemon/tree/main',
-    liveUrl: 'https://littlelemon-lpre.onrender.com',
+    gitUrl: 'https://github.com/fabio-analyzes-data/bellbeat-analysis',
+    liveUrl: 'https://fabio-analyzes-data.github.io/bellbeat-analysis/',
     points: [
-      "Designed and test UX/UI using Figma to create a cohesive and recognizable brand",
-      "Applied UX/UI principles to emulate personas and journeys throughout the web application",
-      "Designed and deployed website and webApp using React.js, React-Router and other related frameworks.",
-      "Participated in code reviews and providing constructive feedback to other developers.",
+      "Performed data analysis in search of new marketing strategies and growth opportunities ",
+      "Analyzed and identified usage trends of similar products offered by competitor brands",
+      "Performed preliminary and exploratory analysis to determine usage scenarios for company's products",
+      "Participated in team reviews and providing constructive feedback to team members.",
     ],
   },
   {
-    title: "Front End Development",
-    project_name: "Clever Search",
-    image: cleverSearch,
+    title: "Sales Analysis",
+    project_name: "Revenue and Demand per State Analysis",
+    image: salesDash,
     icon: backend,
+    isUrl: true,
     icons: [
-      'devicon-react-original',
-      'devicon-tailwindcss-plain',
-      'devicon-javascript-plain'
+      'https://github.com/microsoft/PowerBI-Icons/blob/main/PNG/Power-BI.png?raw=true',
     ],
     date: "Jan 2022 - Jan 2023",
-    gitUrl: '',
+    gitUrl: 'https://github.com/fabio-analyzes-data/sales-analysis',
     liveUrl: '',
     points: [
-      "Developed the UI/UX experience for a Medical Search Engine",
-      "Designed and test UX/UI using Figma to create a cohesive and recognizable brand",
-      "Designed and deployed the webApp using React.js, React-Router, SaSS, Formik and complimentary frameworks.",
+      "Developed Data Dashboard to visualize and understand sales data and its evolution over the last 4 years",
+      "Provided comprehensive analysis of data's trends, insights, patterns and correlations",
+      "Designed insightful dashboards to aggregate data by relevant criteria such as geographical location, timeframe and so on",
       "Implemented responsive design and ensuring cross-browser compatibility.",
-      "Participated in code reviews and providing constructive feedback to other developers.",
+      "Implemented DAX functions to further acquire insights from the given data set",
     ],
   },
   {
-    title: "Front End Development",
-    project_name: "Personal Website",
-    image: personalWeb,
-    icon: web,
+    title: "Stock Transactions",
+    project_name: "USA Congress Members Stock Exchanges",
+    image: usStock,
+    icon: mobile,
+    isUrl: true,
     icons: [
-      'devicon-react-original',
-      'devicon-tailwindcss-plain',
-      'devicon-threejs-original',
+      tableau,
     ],
     date: "Jan 2023 - Present",
-    gitUrl: 'https://github.com/fabio-writes-code/portfolio',
-    liveUrl: 'https://fabio-writes-code.onrender.com/',
+    gitUrl: '',
+    liveUrl: 'https://public.tableau.com/app/profile/fabio.henao/viz/stock-us-representatives/General',
     points: [
-      "Develop the Front end presentation of my personal portfolio website",
-      "Designed and deploy the website using React.js, React-Router, TailwindCSS, Three.Js, Motion and complimentary frameworks.",
-      "Implemented responsive design and ensuring cross-browser compatibility.",
-      "Deployed website to Render.io",
+      "Developed an insightful data presentation pertaining different stock transactions undertaken by US Congress Members",
+      "Implemented relevant filtering criteria to aggregate data based on state legislature and political party",
+      "Designed numerous insightful charts and graphs to communicate the relevant findings of the data patterns",
+      "Implemented dynamic filtering and updated to visualize the contents of the data ",
     ],
   },
   {
-    title: "Additional Projects",
-    project_name: "Personal Projects",
-    image: projectSmall,
+    title: "Post Secondary Education",
+    project_name: "Alberta Post Secondary Income",
+    image: secAlberta,
     icon: stack,
+    isUrl: true,
     icons: [
-      'devicon-html5-plain',
-      'devicon-css3-plain',
-      'devicon-javascript-plain',
+      tableau
     ],
     date: "Jan 2023 - Present",
-    gitUrl: 'https://github.com/fabio-writes-code?tab=repositories',
-    liveUrl: 'https://fabio-writes-code.github.io/',
+    gitUrl: '',
+    liveUrl: 'https://public.tableau.com/app/profile/fabio.henao/viz/PostSecondaryIncomeAlberta/PostSecondaryDashboard',
     points: [
-      "Scheduler list app built using React.js and React-router",
-      "Functional calculator built using vanilla JS, CSS and HTML",
-      "Functional etch-a-sketch built using vanilla JS, CSS and HTML",
+      "Developed a data dashboard to visualize the Median Income Distribution in Alberta based on the type of acquired credential",
+      "Implemented relevant dynamic filtering to visualize relevant segments of the data set",
+      "Designed numerous charts and graphs to illustrate the findings of the data analysis process",
     ],
   },
 ];
@@ -301,8 +297,8 @@ const contact = [
   {
     name: 'GITHUB REPOS',
     icon: github,
-    content: 'https://github.com/fabio-writes-code',
-    href: 'https://github.com/fabio-writes-code',
+    content: 'https://github.com/fabio-analyzes-data',
+    href: 'https://github.com/fabio-analyzes-data',
     link: true,
   },
   {
